@@ -1,3 +1,8 @@
+#ifdef __linux__
+//for memmem on Linux
+#define _GNU_SOURCE 1
+#endif //__linux__
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
